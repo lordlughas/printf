@@ -1,7 +1,5 @@
 #include "main.h"
-
 void print_buffer(char buffer[], int *buff_ind);
-
 /**
  * _printf - Outputs a formatted string.
  * @format: Character string to print - may contain directives.
@@ -14,13 +12,9 @@ int _printf(const char *format, ...)
 	va_list list;
 	char buffer[BUFF_SIZE];
 
-
 	if (format == NULL)
-
 		return (-1);
-
 	va_start(list, format);
-
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
